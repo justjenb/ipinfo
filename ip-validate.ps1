@@ -39,6 +39,7 @@ if ($IPCheck -eq "True") {
 }
     else {
         $hops = "Not available"
+        $pingAverage = "Not available"
         Write-Host -fore Red "$IPAddress is not responding to traceroute requests. Number of hops and average response time cannot be retrieved."
         Start-Sleep 3
     }
